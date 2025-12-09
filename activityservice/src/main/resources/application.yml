@@ -7,6 +7,18 @@ spring:
       uri: mongodb://localhost:27017
       database: aiactivityfitness
 
+  kafka:
+    bootstrap-servers: localhost:9092
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+
+
+kafka:
+  topic:
+    name: activity-events
+
+
 eureka:
   client:
     serviceUrl:
@@ -20,3 +32,4 @@ server:
 logging:
   level:
     org.springframework.data.mongodb.core.MongoTemplate: DEBUG
+

@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.fitness</groupId>
-	<artifactId>activityservice</artifactId>
+	<artifactId>aiservice</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>activityservice</name>
+	<name>aiservice</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>
@@ -50,10 +50,6 @@
 		</dependency>
 
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-webflux</artifactId>
-		</dependency>
-		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 			<optional>true</optional>
@@ -69,7 +65,6 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-
 	<dependencyManagement>
 		<dependencies>
 			<dependency>

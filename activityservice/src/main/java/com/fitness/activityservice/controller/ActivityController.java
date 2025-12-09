@@ -4,6 +4,7 @@ import com.fitness.activityservice.dto.ActivityRequest;
 import com.fitness.activityservice.dto.ActivityResponse;
 import com.fitness.activityservice.service.ActivityService;
 import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -12,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/api/activities")
-@AllArgsConstructor
+@RequiredArgsConstructor
 public class ActivityController {
     private final ActivityService activityService;
 
